@@ -1,0 +1,389 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   
+}
+html{
+      scroll-behaviour: smooth;
+}
+.navbar{
+      display: flex;
+      justify-content: center;
+     align-items: center; 
+     background-color: rgba( 0,0,0,0.5);
+     position: sticky;
+     top: 0;
+}
+.navbar ul{
+      display: flex;
+      list-style:none;
+      margin: 20px 0px;
+}
+.navbar ul li {
+      font-family: century;
+      font-size: 1.1rem;
+      font-weight: bold;
+}
+.navbar ul li a{
+      text-decoration: none;
+      color:black;
+      padding: 8px 25px;
+      transition: all .5s ease;
+}
+.navbar ul li a:hover{
+      background-color:white;
+      color:black;
+      box-shadow: 0 0 10px white;
+}
+      
+
+
+
+
+#home{
+       background: url("image.jpg") no-repeat center center/cover;
+       background-repeat:no-repeat;
+       background-size:50% 50%;
+       display: flex;
+       flex-decoration: column;
+       background-color:white;
+       justify-content: left;
+      align-items: left;
+      color: black;
+}
+#home:hover{
+        background-color:#FA79A8;
+       color: black;
+}
+.img{
+       height:800px;
+       width:40%;
+}
+#home : : before{
+        content:  " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("image.jpg") no-repeat center center/cover;
+        animation:myslide;
+       animation.duration:1s;
+       height: 900px;
+        width: 100%;
+        z-index: -1;
+        opacity: .8;
+}
+.main{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: absolute;
+       top: 30%;
+       right: 10%;
+}
+.headings{
+        font-family: century;
+        font-size: 3rem;
+        text-align: center;
+        margin: 40px 0px;
+}
+
+.btn{
+      padding: 10px 35px;
+      background-color: transparent;
+      border: 1px solid black;
+      color:black;
+      outline: none;
+      transition: .6s ease;
+}
+.btn:hover{
+       background-color: red;
+       color: black;
+       font-weight: bold;
+}
+
+
+
+
+
+
+#about{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 50px;
+        font-size:25px;
+}
+
+#pic{
+       display: flex;
+}
+#pic img{
+       width: 400px;
+       height: 400px;
+       border-radius:500%;
+       padding:50px;
+}
+#pic img:hover{
+       background-color:pink;
+}
+
+#intro{
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      padding: 10px;
+}
+#intro h2{
+         font-size: 2rem;
+         margin-bottom:20px;
+}
+#intro:hover{
+      background-color:pink;
+}
+
+
+
+
+
+
+#education{
+         display: flex;
+         flex-direction:column;
+         background-color:white;
+}
+#education h1{
+         margin: 60px;
+}
+.columns{
+        display:grid;
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+}
+.boox {
+      height:200px;
+      width: 500px;
+       border: 1px solid black;
+       margin: 10px;
+       align-items: center;
+       text-align:justify;
+       background: linear-gradient(to top,rgb(255,45,45) 50%,  white 50%);
+       background-size: 100% 200%;
+       transition: all .8s;
+      border-radius: 30px;
+      padding: 20px;
+}
+.boox:hover{
+       background-position: left bottom;
+       color: black;
+       border: none;
+       box-shadow:yellowgreen;
+}
+.boox h2{
+        color:black;
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+}
+.boox p{
+       color: black;
+       font-size: 1.5rem;
+}
+
+
+
+
+
+
+#technical skills{
+         display: flex;
+         flex-direction:column;
+         background-color:white;
+}
+#technical skills h1{
+         margin: 60px;
+}
+.columns{
+        display:grid;
+        grid-template-columns: auto auto;
+        padding-left: 50px;
+}
+.boxx {
+      height:150px;
+      width: 400px;
+       border: 1px solid black;
+       margin: 10px;
+       align-items: center;
+       text-align:justify;
+       background: linear-gradient(to top,rgb(255,45,45) 50%,  white 50%);
+       background-size: 100% 200%;
+       transition: all .8s;
+      border-radius: 30px;
+      padding: 20px;
+}
+.boxx:hover{
+       background-position: left bottom;
+       color: black;
+       border: none;
+       box-shadow: 0 0 20px rgb(255,45,45);
+}
+.boxx h6{
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+}
+.boxx p{
+       color: black;
+       font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#portfolio{
+     display: flex;
+     flex-direction: column;
+     background-color:white;
+     color:black;
+     align-items: center;
+     padding: 20px;
+}
+#portfolio:hover{
+       background-color:lightgreen;
+       color: black;
+}
+
+.gallery{
+     display: flex;
+     flex-warp: warp;
+     justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+     width: 360px;
+     height: 240px;
+     margin: 30px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+#services{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+}
+.row{
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: warp;
+       box-sizing: border-box;
+    
+}
+.box{
+       display: flex;
+       flex-direction: column;
+       width: 500px;
+       height: 500px;
+       border: 1px solid black;
+       margin: 10px;
+       align-items: center;
+       text-align:justify;
+       padding:10px;
+       border-radius: 15px;
+       background: linear-gradient(to top,rgb(255,45,45) 50%,  white 50%);
+       background-size: 100% 200%;
+       transition: all .8s;
+}
+.box:hover{
+       background-position: left bottom;
+       color: black;
+       border: none;
+       box-shadow: 0 0 20px rgb(255,45,45);
+}
+.box img{
+       width: 80px;
+       height: 80px;
+       background-color: white;
+       padding: 10px;
+}
+
+
+
+
+
+
+
+
+#Contact{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        background-color:rgba(0,0,0,0.5);
+        color: white;
+        padding: 20px;
+}
+.form{
+       display: flex;
+       flex-direction: column;
+       box-sizing: border-box;
+       align-items: center;
+       margin: 20px 0px; 
+}
+.input{
+        padding: 12px;
+        margin: 15px;
+        width: 30%;
+        border:none;
+        outline:none;
+}
+#msg{
+       width: 20%;
+       padding: 10px;
+       margin: 15px;
+       border:none;
+       outline:none;
+}
+#send{
+        padding: 10px;
+        width: 10%;
+        margin: 40px;
+        border: none;
+        outline: none;
+}
+#send : hover{
+        cursor: pointer;
+        box-shadow: yellowgreen;
+}
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
